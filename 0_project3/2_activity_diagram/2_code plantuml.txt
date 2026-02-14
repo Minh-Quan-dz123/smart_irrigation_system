@@ -1,0 +1,20 @@
+@startuml
+start
+
+:Chọn thay đổi chế độ;
+
+switch (Chế độ)
+case (Chế độ 1\n tưới cây theo lịch cá nhân)
+  :Thêm lịch;
+  :Nhập thông tin;
+case (Chế độ 2\n tưới cây theo điều kiện môi trường)
+  :Nhập thời gian tự động;
+case (Chế độ 3\n tưới cây thủ công từ xa)
+  :Nhập thời gian;
+  :Nhấn tưới;
+endswitch
+
+:các hoạt động mặc định khác;
+
+stop
+@endumla

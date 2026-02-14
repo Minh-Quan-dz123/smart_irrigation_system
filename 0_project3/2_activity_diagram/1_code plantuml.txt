@@ -1,0 +1,18 @@
+@startuml
+start
+:đăng nhập;
+:bấm thêm thiết bị mới;
+if (số lượt thêm thiết bị mới còn > 0) then (no)
+    :bấm mua thêm;
+else (yes)
+
+:hệ thống gửi deviceID về;
+:kết nối wifi riêng của thiết bị phát ra;
+:vào http://192.168.4.1;
+:điền ssid, password wifi, deviceID được server gửi về cho;
+:kiểm tra kết nối;
+endif
+
+stop
+
+@enduml
