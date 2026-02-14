@@ -90,6 +90,11 @@ void loop() {
         Serial.println("dang tuoi cay");
         writeLog(status, wateringDuration, now.minute(), now.second());
       }
+      // in ra oled
+      OledPrint_Infor(now.year(), now.month(), now.day(), now.hour(), now.minute(), now.second(),
+      status,
+      deviceIdentity.deviceId,
+      wifi_ssid);
     
     }
   }

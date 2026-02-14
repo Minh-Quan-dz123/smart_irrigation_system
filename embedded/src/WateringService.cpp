@@ -118,7 +118,7 @@ void setPointer(int8_t i) // lọc danh sach
     if(repeats[i].size() == 0) return;
     Schedule crr = repeats[i][0];
 
-    int8_t index = 0;
+    size_t index = 0;
     while(isTimeReached(crr.year, crr.month, crr.day, crr.hour, crr.minute, crr.second) >= 0)
     {
       index++;
@@ -135,7 +135,7 @@ void setPointer(int8_t i) // lọc danh sach
     if(repeats[i].size() == 0) return;
     Schedule x = repeats[i][0];
 
-    int8_t index = 0;
+    //size_t index = 0;
     while(isTimeReached(x.year, x.month, x.day, x.hour, x.minute, x.second) >= 0)
     {
       repeats[i].erase(repeats[i].begin());

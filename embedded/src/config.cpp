@@ -19,8 +19,9 @@ void beginConfig()
   // 3 pump
   initPump();
 
-  // 4 RTC
+  // 4 RTC, OLED
   beginRTC();
+  OLED_SET();
 
   // 5 wifi
   loadWifiConfig();

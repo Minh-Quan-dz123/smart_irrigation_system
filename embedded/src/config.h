@@ -19,8 +19,9 @@
 #include "cycleControl.h"
 #include "scheduleControl.h"
 
-// 2.4 real time
+// 2.4 real time, OLED (I2C)
 #include "DS3231Control.h"
+#include "OLED.h"
 
 // 2.5 máy bơm
 #include "PumpControl.h"

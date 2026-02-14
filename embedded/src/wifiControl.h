@@ -8,6 +8,10 @@
 #include "device_identity.h"
 
 
+extern String wifi_ssid;
+extern String wifi_pass;
+extern String device_secret;
+
 void setWifi();// kết nối wifi
 void reconnectWifi(); // nếu lỡ đang kết nối mà xịt thì kiểm tra và gọi lại
 void saveWifiConfig(); // lưu wifi vào flash
