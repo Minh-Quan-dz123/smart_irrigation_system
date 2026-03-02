@@ -23,6 +23,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
             ignoreExpiration: false,//jwt hết hạn thì từ chối xác thực
             publicKey: process.env.JWT_PUBLIC_KEY?.replace(/\\n/g, '\n'),
             algorithms: ['RS256'],
+            
         })
     }
 
